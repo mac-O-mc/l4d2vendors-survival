@@ -1,6 +1,7 @@
 //Vendor mutation
 //Author: Waifu Enthusiast
 
+// this isn't actually used, but only a leftover
 //------------------------------------------------------------------------------------------------------
 //DECLARE CONSTANTS
 
