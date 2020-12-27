@@ -1,0 +1,18 @@
+"vendors"
+{
+	"base"          	"survival"
+	"maxplayers" 		"4"
+//	"hasdifficulty" 	"1"	// ehhh idk
+
+	"DisplayTitle"		"Vendors - Survival"
+	"ShortDescription"	"wuwuhuu haaau-wuaahh kung fu mario 4 now on theaters"
+	"Description"		"well"
+	"Image"			"vgui/maps/any"
+	"Author"		"Waifu Enthusiast, mac"
+
+	convar
+	{	
+		survivor_allow_crawling 1
+		survivor_crawl_speed 30
+	}
+}
