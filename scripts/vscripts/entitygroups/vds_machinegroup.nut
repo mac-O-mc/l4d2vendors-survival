@@ -65,15 +65,7 @@ vds_machine <-
 					model = "vendormachine"
 					origin = Vector( 0, -24, 0 )
 					targetname = "vendormachine_usetarget"
-					vscripts = "vendors/vendors_usetarget"
-				/*	connections =
-					{
-						OnUser1 =
-						{
-							cmd1 = "ammo_crate_open_sndPlaySound01"
-							cmd2 = "ammo_crate_templateForceSpawn01"
-						}
-					} */
+					vscripts = "vds_surv/vd_usetarget"
 				}
 			}
 		} // SpawnTables

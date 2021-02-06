@@ -12,7 +12,7 @@
 //---------------------------------------------------------
 MapSpawns <- 
 [
-	["vds_machine", "vendormachine_spawn", "vendorsmac_group", SPAWN_FLAGS.SPAWN],
+	["vds_machine", "vendormachine_spawn", "vds_machinegroup", SPAWN_FLAGS.SPAWN],
 ]
 
 printl("Loaded c5m2_park_vendors_survival.nut; does nothing extraordinary for now")

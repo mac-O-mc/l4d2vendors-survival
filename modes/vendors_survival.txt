@@ -1,4 +1,4 @@
-"vendors"
+"vendors_survival"
 {
 	"base"          	"survival"
 	"maxplayers" 		"4"

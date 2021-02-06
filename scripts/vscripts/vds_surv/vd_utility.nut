@@ -13,7 +13,6 @@ function EHandleToPlayer(ehandle) {
 	}
 	return null
 }
-
 /* function EHandleToSurvivorSlot(ehandle) {
 	local player = null
 	while (player = Entities.FindByClassname(player, "player")) {
@@ -32,3 +31,17 @@ function EHandleToPlayer(ehandle) {
 	}
 	return null
 } */
+
+function MathRound(floatnum)
+{
+	local floornum = floor(floatnum)
+	local ceilnum = ceil(floatnum)
+	if(floatnum - floornum >= 0.5)
+		return ceilnum
+	else
+		return floatnum
+}
+function MathToClosestMultipleOf(num, factor)
+{
+	return factor * (MathRound(num / factor))
+}

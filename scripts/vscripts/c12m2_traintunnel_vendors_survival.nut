@@ -12,7 +12,41 @@
 //---------------------------------------------------------
 MapSpawns <- 
 [
-	["vds_machine", "vendormachine_spawn", "vendorsmac_group", SPAWN_FLAGS.SPAWN],
+	["vds_machine", "vendormachine_spawn", "vds_machinegroup", SPAWN_FLAGS.SPAWN]
 ]
 
-printl("Loaded c12m2_traintunnel_vendors_survival.nut; does nothing extraordinary for now")
+printl("VSCRIPT: Running c12m2_traintunnel_vendors_survival.nut")
+printl("SCRIPT does nothing extraordinary for now")
+
+MapOptions <-
+{
+	precache_models =
+	[
+		"models/v_models/v_cola.mdl",
+		"models/w_models/weapons/w_cola.mdl"
+	]
+	precache_sounds =
+	[
+		"sound/player/items/attach_cola_bottles_01.wav",
+		"sound/player/items/attach_cola_bottles_interrupt.wav" // custom sound
+		"sound/player/items/gas_can_fill_interrupt_01.wav",
+		"sound/player/items/gas_can_fill_pour_01.wav"
+	]
+}
+// precache every model and sound that we only need to precache if it isn't
+foreach( path in MapOptions.precache_models )
+{
+	if( !IsModelPrecached( path ) )
+	{
+		PrecacheModel( path )
+		printl( "MAPSCRIPT Precaching model: "+path )
+	}
+}
+foreach( path in MapOptions.precache_sounds )
+{
+	if( !IsSoundPrecached( path ) )
+	{
+		PrecacheSound( path )
+		printl( "MAPSCRIPT Precaching sound: "+path )
+	}
+}
